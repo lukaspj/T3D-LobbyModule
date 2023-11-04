@@ -1,0 +1,36 @@
+﻿function Lobby::onCreate(%this) {
+}
+
+function Lobby::onDestroy(%this) {
+}
+
+// Run once during initial setup
+function Lobby::initServer(%this) {
+}
+
+// Run at the start of every game, put datablocks here
+function Lobby::onCreateGameServer(%this) {
+}
+
+// Cleanup the server
+function Lobby::onDestroyGameServer(%this) {
+}
+
+// Run once during initial setup
+function Lobby::initClient(%this) {
+    %this.queueExec("./gui/lobby.gui");
+    %this.queueExec("./client/lobby.tscript");
+    echo("connecting to lobby server");
+    %lobbyConnection = new LobbyServerConnection(GameLobbyServerConnection) {};
+    %lobbyConnection.connect("localhost:3001");
+    %lobbyConnection.updateLobbyList();
+}
+
+// Run when a client joins a game
+function Lobby::onCreateClientConnection(%this) {
+}
+
+// Cleanup the client
+function Lobby::onDestroyClientConnection(%this) {
+}
+

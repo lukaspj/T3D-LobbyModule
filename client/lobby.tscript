@@ -1,0 +1,5 @@
+﻿function initLobby() {
+    portInit($Pref::Server::Port);
+    allowConnections(true);
+    schedule(0,0,startHeartbeat);
+}

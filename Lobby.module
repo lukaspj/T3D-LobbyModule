@@ -1,0 +1,15 @@
+﻿<ModuleDefinition
+   canSave="true"
+   canSaveDynamicFields="true"
+   ModuleId="Lobby"
+   VersionId="1"
+   Group="Game"
+   scriptFile="Lobby"
+   CreateFunction="onCreate"
+   DestroyFunction="onDestroy">
+   <DeclaredAssets
+      canSave="true"
+      canSaveDynamicFields="true"
+      Extension="asset.taml"
+      Recurse="true"/>
+</ModuleDefinition>

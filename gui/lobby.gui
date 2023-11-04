@@ -1,0 +1,15 @@
+﻿//--- OBJECT WRITE BEGIN ---
+$guiContent = new GuiChunkedBitmapCtrl(LobbyGui) {
+    BitmapAsset = "UI:backgrounddark_image";
+    extent = "1024 768";
+    minExtent = "8 8";
+    horizSizing = "width";
+    vertSizing = "height";
+    profile = "GuiDefaultProfile";
+    tooltipProfile = "GuiToolTipProfile";
+    isContainer = "1";
+    superClass = "UINavigation";
+    canSaveDynamicFields = "0";
+
+
+};
